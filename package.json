@@ -4,7 +4,7 @@
   "description": "This is a Workshop about Protactor",
   "main": "index.js",
   "scripts": {
-    "clean": "del /s dist",
+    "clean": "rm -rf dist",
     "build": "npm run clean && tsc",
     "test": "npm run build && protractor dist/protractor/local.config.js"
   },
@@ -25,11 +25,11 @@
   },
   "homepage": "https://github.com/david1999erazo/protactor-workshop-2020#readme",
   "dependencies": {
-    "protractor": "^7.0.0"
   },
   "devDependencies": {
     "@types/jasminewd2": "^2.0.8",
     "@types/node": "^14.0.25",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "protractor": "^7.0.0"
   }
 }
