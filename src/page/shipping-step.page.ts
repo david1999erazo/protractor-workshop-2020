@@ -10,7 +10,7 @@ export class ShippingStepPage {
     this.checkoutButton = $('#form > p > button > span');
   }
 
-  public async acceptTerms(): Promise<void> {
+  public async acceptTermsAndContinue(): Promise<void> {
     await this.checkbox.click();
     await this.checkoutButton.click();
   }

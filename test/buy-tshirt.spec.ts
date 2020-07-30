@@ -34,18 +34,18 @@ describe('Buy a t-shirt', () => {
     await(browser.sleep(3000));
     await productListPage.addToCart();
     await(browser.sleep(3000));
-    await productAddedModalPage.addedModal();
+    await productAddedModalPage.clickModalButton();
     await(browser.sleep(3000));
     await summaryStepPage.clickCheckOut();
     await(browser.sleep(3000));
 
-    await signInStepPage.login();
+    await signInStepPage.login('aperdomobo@gmail.com', 'WorkshopProtractor');
     await(browser.sleep(3000));
 
     await addressStepPage.goToCheckOut();
     await(browser.sleep(3000));
 
-    await shippingStepPage.acceptTerms();
+    await shippingStepPage.acceptTermsAndContinue();
     await(browser.sleep(3000));
 
     await paymentStepPage.clickPayByBank();

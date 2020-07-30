@@ -7,7 +7,7 @@ export class ProductAddedModalPage {
     this.modalButton = $('[style*="display: block;"] .button-container > a');
   }
 
-  public async addedModal(): Promise<void> {
+  public async clickModalButton(): Promise<void> {
     await this.modalButton.click();
   }
 }
